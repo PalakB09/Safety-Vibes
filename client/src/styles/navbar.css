@@ -56,7 +56,7 @@
   line-height: 1;
 }
 .header_wrapper .nav-item .nav-link.active {
-  color: blueviolet;
+  color: palevioletred;
 }
 .header-scrolled {
   position: fixed;
