@@ -38,7 +38,7 @@
 }
 
 .button-30:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, #FFB8BF 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .button-30:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
-  transform: translateY(2px);
+  box-shadow: 0 2px 4px #FFB8BF, 0 4px 8px rgba(0, 0, 0, 0.1); /* Shrink shadow when clicked */
+  transform: translateY(2px) scale(1); /* Button moves down a bit on click */
 }
 
 @media (min-width: 768px) {
