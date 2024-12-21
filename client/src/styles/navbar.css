@@ -1,11 +1,11 @@
 .learn-more-btn {
-  background-color: blueviolet !important;
+  background-color: #de1670 !important;
   font-size: 18px !important;
   font-weight: 700 !important;
   color: whitesmoke !important;
   padding: 12px 29px !important;
   border-radius: 10px !important;
-  border: 2px solid blueviolet !important;
+  border: 2px solid #de1670 !important;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%) !important;
   display: inline-block !important;
   text-decoration: none !important;
@@ -13,13 +13,13 @@
 }
 
 .learn-more-btn-logout {
-  background-color: #d11a2a !important;
+  background-color:#de1670 !important;
   font-size: 18px !important;
   font-weight: 700 !important;
   color: whitesmoke !important;
   padding: 12px 29px !important;
   border-radius: 10px !important;
-  border: 2px solid #d11a2a !important;
+  border: 2px solid #de1670 !important;
   box-shadow: 0 10px 20px rgb(0 0 0 / 10%) !important;
   display: inline-block !important;
   text-decoration: none !important;
@@ -92,6 +92,15 @@ nav {
 }
 .header-scrolled .nav-item .nav-link {
   font-size: 17px;
+}
+
+.nav-item:hover{
+  transform: translateY(-5px);
+  transition-duration: 0.6s;
+}
+
+.nav-link:hover{
+  color:#ed4161;
 }
 
 @media (max-width: 1300px) {
