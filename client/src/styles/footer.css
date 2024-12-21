@@ -12,7 +12,7 @@
 .footer_wrapper .footer_text,
 .footer_wrapper .footer_text a {
   margin-top: 30px;
-  color: white;
+  color: black;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.5;
@@ -24,7 +24,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  color: white;
+  color: black;
   margin-bottom: 25px;
 }
 .footer_wrapper .footer_social_media_icon {
@@ -32,7 +32,7 @@
   font-size: 20px;
 }
 .footer_wrapper .footer_credits {
-  color: white;
+  color: black;
   border-top: 1px solid white;
   padding-top: 20px;
   margin-top: 30px;

@@ -94,14 +94,14 @@ const Footer = (props) => {
                       <a
                         href="https://www.linkedin.com/in/priyagupta20044/"
                         className="footer_social_media_icon"
-                        style={{ color: "white" }}
+                        style={{ color: "#ed4161" }}
                       >
                         <BsLinkedin size={25} />
                       </a>
                       <a
                         href="https://github.com/priyagupta20044"
                         className="footer_social_media_icon"
-                        style={{ color: "white" }}
+                        style={{ color: "#ed4161" }}
                       >
                         <BsGithub size={25} />
                       </a>
