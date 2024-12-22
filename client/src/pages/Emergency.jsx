@@ -27,7 +27,7 @@ const Emergency = () => {
       };
       console.log(payload);
       const res = await fetch(
-        "http://localhost:8000/api/v1/emergency/emergencypressed",
+        "https://safety-vibes.onrender.com/api/v1/emergency/emergencypressed",
         {
           method: "POST",
           body: JSON.stringify(payload),

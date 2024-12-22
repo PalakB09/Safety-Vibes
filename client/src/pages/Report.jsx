@@ -30,7 +30,7 @@ const Report = () => {
             return false
         }
         try {
-            const res = await axios.post('http://localhost:8000/api/v1/incidents',
+            const res = await axios.post('https://safety-vibes.onrender.com/api/v1/incidents',
                 {user: auth?.user?._id, report, pincodeOfIncident, address });
 
             if (res.status === 201) {

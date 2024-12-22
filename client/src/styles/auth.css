@@ -40,3 +40,17 @@
     #8f17ff
   );
 } */
+.a1, .b1{
+  width: 400px;
+  height: 440px;
+}
+.b2, .a2{
+  height: 700px;
+}
+.l1{
+  background-color: transparent;
+  width: 100%;
+}
+l1:hover{
+  transform: translateY(-1px) !important; 
+}
