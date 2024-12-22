@@ -12,7 +12,7 @@ const Dashboard = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:8000/api/v1/emergency`, {
+        const res = await fetch(`https://safety-vibes.onrender.com/api/v1/emergency`, {
           method: "GET",
           headers: { 'Content-type': 'application/json' }
         });
@@ -32,14 +32,14 @@ const Dashboard = (props) => {
 
 
     fetchData()
-  },[ack])
+  },[])
 
 
 
 
   const ackn = async(uid) => {
     try{
-      const res = await fetch(`http://localhost:8000/api/v1/emergency/${uid}`,{
+      const res = await fetch(`https://safety-vibes.onrender.com/api/v1/emergency/${uid}`,{
         method: "PATCH",
         headers: {'Content-type': 'application/json'}
       });
@@ -54,7 +54,7 @@ const Dashboard = (props) => {
   }
   const getChats = async (emerge) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/chats/${auth?.user?._id}/emerg/${emerge}`, {
+      const res = await fetch(`https://safety-vibes.onrender.com/api/v1/chats/${auth?.user?._id}/emerg/${emerge}`, {
         method: "GET",
         headers: { 'Content-type': "application/json" }
       });
@@ -81,7 +81,7 @@ const Dashboard = (props) => {
 
       }
       console.log(payload)
-      const res = await fetch("http://localhost:8000/api/v1/chats", {
+      const res = await fetch("https://safety-vibes.onrender.com/api/v1/chats", {
         method: "POST",
         headers: { 'Contents-type': 'application/json' },
         body: JSON.stringify(payload)

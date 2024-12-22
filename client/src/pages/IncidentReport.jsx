@@ -10,7 +10,7 @@ const Dashboard = () => {
   // Fetch all incidents
   const getAllIncidents = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/v1/incidents", {
+      const res = await fetch("https://safety-vibes.onrender.com/api/v1/incidents", {
         method: "GET",
         headers: { "Content-type": "application/json" },
       });
@@ -28,7 +28,7 @@ const Dashboard = () => {
   // Acknowledge incident
   const acknowledge = async (incId) => {
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/incidents/${incId}`, {
+      const res = await fetch(`https://safety-vibes.onrender.com/api/v1/incidents/${incId}`, {
         method: "PATCH",
         headers: { "Content-type": "application/json" },
       });

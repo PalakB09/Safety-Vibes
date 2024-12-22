@@ -63,7 +63,7 @@ const Register = () => {
             return false;
         }
         try {
-            const res = await axios.post('http://localhost:8000/api/v1/users/register',
+            const res = await axios.post('https://safety-vibes.onrender.com/api/v1/users/register',
                 { uname, email, phone, password, emergencyNo, emergencyMail, pincode });
 
             if (res.status === 201) {
@@ -86,12 +86,12 @@ const Register = () => {
         <div className='my-5'>
             <div class="container d-flex justify-content-center align-items-center ">
                 <div class="row border rounded-5 p-3 bg-white shadow box-area reverseCol">
-                    <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+                    <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box a1 a2">
                         <div class="featured-image mb-3 animateImg">
                             <img src={register} class="img-fluid" width={500} className='mt-5' />
                         </div>
                     </div>
-                    <div class="col-md-6 right-box">
+                    <div class="col-md-6 right-box b1 b2">
                         <div class="row align-items-center">
                             <div class="header-text mb-2">
                                 <h2>Welcome</h2>
@@ -137,9 +137,9 @@ const Register = () => {
                                     <button class="btn btn-lg  text-white" onClick={handleSubmit} type="button" style={{ backgroundColor: 'blueviolet', width: '100%' }} >Register</button>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row align-items-center my-3 ">
-                                <div class="form-outline flex-fill mb-0 " >
-                                    <Link to='/login' class="btn btn-outline-dark btn-lg btn-block" style={{ width: '100%' }} type="button">Login</Link>
+                            <div class="d-flex flex-row align-items-center my-3 l1">
+                                <div class="form-outline flex-fill mb-0 l1" >
+                                    <Link to='/login' class="btn btn-outline-dark btn-lg btn-block l1 " style={{ width: '100%' }} type="button">Login</Link>
                                 </div>
                             </div>
                         </div>
